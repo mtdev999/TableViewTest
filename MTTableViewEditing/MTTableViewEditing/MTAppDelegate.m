@@ -6,17 +6,27 @@
 //  Copyright © 2016 Mark Tezza. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "MTAppDelegate.h"
 
-@interface AppDelegate ()
+#import "MTViewController.h"
+
+@interface MTAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation MTAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    UIWindow *window  =[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = window;
+    
+    MTViewController *controller = [[MTViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
+    
+    window.rootViewController = navController;
+    [window makeKeyAndVisible];
+    
     return YES;
 }
 

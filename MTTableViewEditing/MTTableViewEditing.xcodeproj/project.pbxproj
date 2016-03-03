@@ -8,24 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1B8045B21C88761500E48291 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8045B11C88761500E48291 /* main.m */; };
-		1B8045B51C88761500E48291 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8045B41C88761500E48291 /* AppDelegate.m */; };
-		1B8045B81C88761500E48291 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8045B71C88761500E48291 /* ViewController.m */; };
-		1B8045BB1C88761500E48291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8045B91C88761500E48291 /* Main.storyboard */; };
-		1B8045BD1C88761500E48291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8045BC1C88761500E48291 /* Assets.xcassets */; };
-		1B8045C01C88761500E48291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8045BE1C88761500E48291 /* LaunchScreen.storyboard */; };
+		1B8045B51C88761500E48291 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8045B41C88761500E48291 /* MTAppDelegate.m */; };
+		1B8045CF1C88772300E48291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8045C81C88772300E48291 /* Assets.xcassets */; };
+		1B8045D01C88772300E48291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8045C91C88772300E48291 /* LaunchScreen.storyboard */; };
+		1B8045D31C88787000E48291 /* MTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8045D21C88787000E48291 /* MTViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B8045AD1C88761500E48291 /* MTTableViewEditing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTTableViewEditing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B8045B11C88761500E48291 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1B8045B31C88761500E48291 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1B8045B41C88761500E48291 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1B8045B61C88761500E48291 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1B8045B71C88761500E48291 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1B8045BA1C88761500E48291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1B8045BC1C88761500E48291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1B8045BF1C88761500E48291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B8045B31C88761500E48291 /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
+		1B8045B41C88761500E48291 /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
 		1B8045C11C88761500E48291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B8045C81C88772300E48291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B8045CA1C88772300E48291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B8045D11C88787000E48291 /* MTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTViewController.h; sourceTree = "<group>"; };
+		1B8045D21C88787000E48291 /* MTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +40,8 @@
 		1B8045A41C88761500E48291 = {
 			isa = PBXGroup;
 			children = (
+				1B8045C71C88772300E48291 /* Resource */,
+				1B8045CB1C88772300E48291 /* Source */,
 				1B8045AF1C88761500E48291 /* MTTableViewEditing */,
 				1B8045AE1C88761500E48291 /* Products */,
 			);
@@ -58,13 +58,8 @@
 		1B8045AF1C88761500E48291 /* MTTableViewEditing */ = {
 			isa = PBXGroup;
 			children = (
-				1B8045B31C88761500E48291 /* AppDelegate.h */,
-				1B8045B41C88761500E48291 /* AppDelegate.m */,
-				1B8045B61C88761500E48291 /* ViewController.h */,
-				1B8045B71C88761500E48291 /* ViewController.m */,
-				1B8045B91C88761500E48291 /* Main.storyboard */,
-				1B8045BC1C88761500E48291 /* Assets.xcassets */,
-				1B8045BE1C88761500E48291 /* LaunchScreen.storyboard */,
+				1B8045B31C88761500E48291 /* MTAppDelegate.h */,
+				1B8045B41C88761500E48291 /* MTAppDelegate.m */,
 				1B8045C11C88761500E48291 /* Info.plist */,
 				1B8045B01C88761500E48291 /* Supporting Files */,
 			);
@@ -77,6 +72,48 @@
 				1B8045B11C88761500E48291 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B8045C71C88772300E48291 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1B8045C81C88772300E48291 /* Assets.xcassets */,
+				1B8045C91C88772300E48291 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1B8045CB1C88772300E48291 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1B8045CC1C88772300E48291 /* Extensions */,
+				1B8045CD1C88772300E48291 /* Models */,
+				1B8045CE1C88772300E48291 /* UI */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1B8045CC1C88772300E48291 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1B8045CD1C88772300E48291 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B8045CE1C88772300E48291 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1B8045D11C88787000E48291 /* MTViewController.h */,
+				1B8045D21C88787000E48291 /* MTViewController.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +174,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B8045C01C88761500E48291 /* LaunchScreen.storyboard in Resources */,
-				1B8045BD1C88761500E48291 /* Assets.xcassets in Resources */,
-				1B8045BB1C88761500E48291 /* Main.storyboard in Resources */,
+				1B8045CF1C88772300E48291 /* Assets.xcassets in Resources */,
+				1B8045D01C88772300E48291 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +186,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B8045B81C88761500E48291 /* ViewController.m in Sources */,
-				1B8045B51C88761500E48291 /* AppDelegate.m in Sources */,
+				1B8045B51C88761500E48291 /* MTAppDelegate.m in Sources */,
+				1B8045D31C88787000E48291 /* MTViewController.m in Sources */,
 				1B8045B21C88761500E48291 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,18 +195,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1B8045B91C88761500E48291 /* Main.storyboard */ = {
+		1B8045C91C88772300E48291 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1B8045BA1C88761500E48291 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1B8045BE1C88761500E48291 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B8045BF1C88761500E48291 /* Base */,
+				1B8045CA1C88772300E48291 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

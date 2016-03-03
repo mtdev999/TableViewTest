@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MTViewController.h
 //  MTTableViewEditing
 //
 //  Created by Mark Tezza on 03.03.16.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface MTViewController : UIViewController
 
 @end
-
