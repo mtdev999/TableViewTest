@@ -1,4 +1,4 @@
-# UITableViewTest task #30 - iDevCources
+# UITableViewTest task #30 - iDevCourse
 https://vk.com/topic-58860049_29402900
 
 <h4>Level Pupil</h4> 
