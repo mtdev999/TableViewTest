@@ -1,4 +1,4 @@
-# 31 - 32. UITableView Editing - iDevCources
+# 31 - 32. UITableView Editing - iDevCourse
 https://vk.com/topic-58860049_29407719
 
 <h4>Level Pupil</h4> 
