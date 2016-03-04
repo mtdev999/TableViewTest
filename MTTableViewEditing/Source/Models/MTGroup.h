@@ -11,5 +11,6 @@
 @interface MTGroup : NSObject
 @property (nonatomic, strong)   NSString    *name;
 @property (nonatomic, strong)   NSArray     *workers;
+@property (nonatomic, assign)   BOOL        groupWokersEmpty;
 
 @end

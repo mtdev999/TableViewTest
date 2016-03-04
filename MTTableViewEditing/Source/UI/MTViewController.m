@@ -13,7 +13,7 @@
 
 @interface MTViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong)   UITableView     *tableView;
-@property (nonatomic, strong)   NSMutableArray     *mutableGroups;
+@property (nonatomic, strong)   NSMutableArray  *mutableGroups;
 
 @end
 
@@ -45,15 +45,16 @@
 
 - (void)actionAdding:(UIBarButtonItem *)sender {
     MTGroup *group = [[MTGroup alloc] init];
-    group.name  = [NSString stringWithFormat:@"Group @%lu", self.mutableGroups.count + 1];
+    group.name  = [NSString stringWithFormat:@"Group #%lu", self.mutableGroups.count + 1];
     group.workers = @[[NSObject new]];
+    group.groupWokersEmpty = NO;
     
     NSUInteger newIndex = 0;
     [self.mutableGroups insertObject:group atIndex:newIndex];
     
     NSIndexSet *newIndexSection = [NSIndexSet indexSetWithIndex:newIndex];
     [self.tableView beginUpdates];
-    [self.tableView insertSections:newIndexSection withRowAnimation:UITableViewRowAnimationLeft];
+    [self.tableView insertSections:newIndexSection withRowAnimation:UITableViewRowAnimationTop];
     [self.tableView endUpdates];
     
     [self suspendUserIteractions];
@@ -177,6 +178,16 @@
     [tableView beginUpdates];
     [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
     [tableView endUpdates];
+    
+    if (group.workers.count < 2 && group.groupWokersEmpty == NO) {
+        [self.mutableGroups removeObject:group];
+        
+        NSIndexSet *newIndexSection = [NSIndexSet indexSetWithIndex:indexPath.section];
+    
+        [tableView beginUpdates];
+        [tableView deleteSections:newIndexSection withRowAnimation:UITableViewRowAnimationTop];
+        [tableView endUpdates];
+    }
 }
 
 #pragma mark -
