@@ -80,7 +80,24 @@
                moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
                       toIndexPath:(NSIndexPath *)destinationIndexPath
 {
+    MTGroup *sourceGroup = [self.mutableGroups objectAtIndex:sourceIndexPath.section];
+    MTWorker *worker = [sourceGroup.workers objectAtIndex:sourceIndexPath.row];
     
+    NSMutableArray *tempArray =[NSMutableArray arrayWithArray:sourceGroup.workers];
+    
+    if (sourceIndexPath.section == destinationIndexPath.section) {
+        [tempArray removeObject:worker];
+        [tempArray insertObject:worker atIndex:destinationIndexPath.row];
+        sourceGroup.workers = tempArray;
+    } else {
+        [tempArray removeObject:worker];
+        sourceGroup.workers = tempArray;
+        
+        MTGroup *destinationGroup = [self.mutableGroups objectAtIndex:destinationIndexPath.section];
+        tempArray = [NSMutableArray arrayWithArray:destinationGroup.workers];
+        [tempArray insertObject:worker atIndex:destinationIndexPath.row];
+        destinationGroup.workers = tempArray;
+    }
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
