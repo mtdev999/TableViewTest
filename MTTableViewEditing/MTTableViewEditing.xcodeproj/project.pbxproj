@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5EED411C894A1000CE3649 /* MTWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5EED401C894A1000CE3649 /* MTWorker.m */; };
+		1B5EED441C894CE300CE3649 /* MTGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5EED431C894CE300CE3649 /* MTGroup.m */; };
 		1B8045B21C88761500E48291 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8045B11C88761500E48291 /* main.m */; };
 		1B8045B51C88761500E48291 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8045B41C88761500E48291 /* MTAppDelegate.m */; };
 		1B8045CF1C88772300E48291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8045C81C88772300E48291 /* Assets.xcassets */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B5EED3F1C894A1000CE3649 /* MTWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTWorker.h; sourceTree = "<group>"; };
+		1B5EED401C894A1000CE3649 /* MTWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTWorker.m; sourceTree = "<group>"; };
+		1B5EED421C894CE300CE3649 /* MTGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGroup.h; sourceTree = "<group>"; };
+		1B5EED431C894CE300CE3649 /* MTGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTGroup.m; sourceTree = "<group>"; };
 		1B8045AD1C88761500E48291 /* MTTableViewEditing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTTableViewEditing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B8045B11C88761500E48291 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1B8045B31C88761500E48291 /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +109,10 @@
 		1B8045CD1C88772300E48291 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1B5EED3F1C894A1000CE3649 /* MTWorker.h */,
+				1B5EED401C894A1000CE3649 /* MTWorker.m */,
+				1B5EED421C894CE300CE3649 /* MTGroup.h */,
+				1B5EED431C894CE300CE3649 /* MTGroup.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,7 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5EED411C894A1000CE3649 /* MTWorker.m in Sources */,
 				1B8045B51C88761500E48291 /* MTAppDelegate.m in Sources */,
+				1B5EED441C894CE300CE3649 /* MTGroup.m in Sources */,
 				1B8045D31C88787000E48291 /* MTViewController.m in Sources */,
 				1B8045B21C88761500E48291 /* main.m in Sources */,
 			);
@@ -327,6 +339,7 @@
 				1B8045C61C88761500E48291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
