@@ -19,11 +19,19 @@
 
 @implementation MTViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.mutableGroups = [NSMutableArray array];
+        self.navigationItem.title = @"TableView Editing Test";
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"TableView Editing Test";
-    self.mutableGroups = [NSMutableArray array];
     [self prepareTableView];
     [self addBarButtonItems];
 }
@@ -36,7 +44,6 @@
 #pragma mark Actions
 
 - (void)actionAdding:(UIBarButtonItem *)sender {
-    
     MTGroup *group = [[MTGroup alloc] init];
     group.name  = [NSString stringWithFormat:@"Group @%lu", self.mutableGroups.count + 1];
     group.workers = @[[NSObject new]];
